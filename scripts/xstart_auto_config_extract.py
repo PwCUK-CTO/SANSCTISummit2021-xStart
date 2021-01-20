@@ -9,6 +9,12 @@ import re
 import os
 import json
 
+"""
+Description: Python 3 script to decode resources of the xStart malware family, and extract configuration from its shellcode
+Author: @BitsOfBinary
+
+"""
+
 
 class HelperMethods:
     """
