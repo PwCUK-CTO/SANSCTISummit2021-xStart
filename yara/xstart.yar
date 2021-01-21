@@ -18,7 +18,7 @@ rule wwlib_in_ZIP : Heuristic_and_General {
 
 	meta:
 		description = "Detects wwlib.dll filename in a ZIP folder (commonly used by Mustang Panda for DLL hijacking)"
-		TLP = "AMBER"
+		TLP = "WHITE"
 		author = "PwC Cyber Threat Operations :: @BitsOfBinary"
 		copyright = "Copyright PwC UK 2021 (C)"
 		license = "Apache License, Version 2.0"
@@ -38,7 +38,7 @@ rule wwlib_in_RAR : Heuristic_and_General {
 
 	meta:
 		description = "Detects RAR archives that contain a file named 'wwlib.dll'"
-		TLP = "AMBER"
+		TLP = "WHITE"
 		author = "PwC Cyber Threat Operations :: @BitsOfBinary"
 		copyright = "Copyright PwC UK 2021 (C)"
 		license = "Apache License, Version 2.0"
@@ -58,7 +58,7 @@ rule xStart_dropper_strings : White_Dev_50 {
 
 	meta:
 		description = "Detects the xStart Cobalt Strike dropper via some unique strings"
-		TLP = "AMBER"
+		TLP = "WHITE"
 		author = "PwC Cyber Threat Operations :: @BitsOfBinary"
 		copyright = "Copyright PwC UK 2021 (C)"
 		license = "Apache License, Version 2.0"
@@ -80,7 +80,7 @@ rule xStart_Crypto_API_Calls : White_Dev_50 {
 
 	meta:
 		description = "Detects unique API calls to Windows Crypto routines seen in the xStart Cobalt Strike dropper"
-		TLP = "AMBER"
+		TLP = "WHITE"
 		author = "PwC Cyber Threat Operations :: @BitsOfBinary"
 		copyright = "Copyright PwC UK 2021 (C)"
 		license = "Apache License, Version 2.0"
@@ -107,7 +107,7 @@ rule xStart_Resource_Names : White_Dev_50 {
 
 	meta:
 		description = "Detects xStart resource names used to store encrypted payloads"
-		TLP = "AMBER"
+		TLP = "WHITE"
 		author = "PwC Cyber Threat Operations :: @BitsOfBinary"
 		copyright = "Copyright PwC UK 2021 (C)"
 		license = "Apache License, Version 2.0"
@@ -128,7 +128,7 @@ rule Elysion_Code_Signed_Binaries : White_Dev_50 {
 
 	meta:
 		description = "Detects Elysion code signing certificate, observed being used to sign xStart samples"
-		TLP = "AMBER"
+		TLP = "WHITE"
 		author = "PwC Cyber Threat Operations :: @BitsOfBinary"
 		copyright = "Copyright PwC UK 2021 (C)"
 		license = "Apache License, Version 2.0"
@@ -149,7 +149,7 @@ rule Eagle_Investments_Code_Signed_Binaries : White_Dev_50 {
 
 	meta:
 		description = "Detects Eagle Investments code signing certificate, observed being used to sign xStart samples"
-		TLP = "AMBER"
+		TLP = "WHITE"
 		author = "PwC Cyber Threat Operations :: @BitsOfBinary"
 		copyright = "Copyright PwC UK 2021 (C)"
 		license = "Apache License, Version 2.0"
@@ -170,7 +170,7 @@ rule xStart_Sender_Email_Address : White_Dev_50 {
 
 	meta:
 		description = "Looks for the email address used in White Dev 50 emails used to deliver xStart"
-		TLP = "AMBER"
+		TLP = "WHITE"
 		author = "PwC Cyber Threat Operations :: @BitsOfBinary"
 		copyright = "Copyright PwC UK 2021 (C)"
 		license = "Apache License, Version 2.0"
