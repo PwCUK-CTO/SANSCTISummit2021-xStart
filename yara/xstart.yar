@@ -48,10 +48,10 @@ rule wwlib_in_RAR : Heuristic_and_General {
 		hash = "34ac6845ab329703d059cb7f8ece73cfe6ebe967a6ac377dab6ca876900be0e4"
 
 	strings:
-    	$ = "wwlib.dll"
+		$ = "wwlib.dll"
 
-    condition:
-    	uint32(0) == 0x21726152 and any of them
+	condition:
+		uint32(0) == 0x21726152 and any of them
 }
 
 rule xStart_dropper_strings : White_Dev_50 {
@@ -71,7 +71,7 @@ rule xStart_dropper_strings : White_Dev_50 {
 	strings:
 		$ = "%s --xStart" wide
 		$ = {556E69745F41455309556E69745F46756E63}
-        
+
 	condition:
 		uint16(0) == 0x5A4D and any of them
 }
